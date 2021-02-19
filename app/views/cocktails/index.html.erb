@@ -1,5 +1,6 @@
 <div class="container">
 
+
   <p id="notice"><%= notice %></p>
 
   <h2>Cocktails</h2>
@@ -25,7 +26,7 @@
         <%#= second iteration begins %>
         <% cocktail.doses.each do |dose| %>
           <%#= list item with dose description and ingredient %>
-          <li class="list-group-item"><%= dose.ingredient.name %></li>
+          <li class="list-group-item"> <%= dose.description %> <%= dose.ingredient.name %></li>
         <%#= end of dose iteration %>
         <% end %>
 
